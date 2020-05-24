@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff 
+    url('https://media.tenor.com/images/e549f9798674301c5af2c91581194091/tenor.gif')
+    no-repeat center;
+    z-index: 1;
+}
+.open-button{
+    cursor: pointer;
+	position: fixed;
+	bottom: 23px;
+    right: 28px;
+}
+.chat-popup{
+    display: none;
+    position:fixed;
+    bottom: 0px;
+    right: 15px;
+    border: 2px solid black;
+    z-index: 9;
+}
+.form-container{
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+}
+.form-container .btn{
+    margin-top: 5px;
+}
+.form-container .cancel{
+    background-color: red;
+}
+.d-one{
+    background-image: url(http://www.ranatasuzuki.com/files/images/giphy.gif);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 10px 18px #888888;
+}
+#myNav{
+    opacity: .3;
+    background-color: black;
+    width: 100%;
+}
+#collapsibleNavbar{
+    padding-left: 350px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+#navbardrop{
+    color: rgb(196, 195, 195);
+}
+.d-two{
+    text-align: center;
+    margin-top: 100px;
+}
+.d-two h1{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+.d-two p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'The Girl Next Door', cursive;
+}
+.d-three{
+    margin-top: 70px;
+}
+.d-four{
+    margin-top: 60px;
+}
+.d-four h2{
+    font-family:'Times New Roman', Times, serif;
+}
+.d-four p{
+    font-family: Tahoma, sans-serif;
+}
+.d-five{
+    width: 400px;
+}
+.img-c{
+    width: 350px;
+}
+.carousel-indicators{
+    width: 100px;
+    margin-left: 130px;
+    margin-bottom: 25px;
+}
+.hr-line2{
+    background-color: rgb(172, 170, 170);
+    height: .5px;
+    margin-left: 35px;
+    margin-right: 35px; 
+}
+.end{
+    height: 120px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 10px;
+    font-family: sans-serif;
+    line-height: .2rem;
+    background-color: #D5D5D5;
+}    
+@media only screen and (max-width: 575px){
+    #collapsibleNavbar{
+        padding-left: 0px;
+    }
+    .d-two h1{
+        line-height: 90px;
+    }
+}    

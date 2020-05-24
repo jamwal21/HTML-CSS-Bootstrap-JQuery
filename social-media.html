@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranata Suzuki-Social Media</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="social-media.css">
+</head>
+<body onload="loader()">
+    <div id="loading"></div>
+
+    <button type="button" class="btn open-button" onclick="openform()">
+        <img src="https://img.icons8.com/color/48/000000/open-in-popup.png"/>
+    </button> 
+    <div class="chat-popup" id="myform">
+        <form action="" class="form-container">
+          <label for="msg"><b>Subscribe here for upcoming book events!</b></label>
+          <input type="text" class="form-control" placeholder="Enter your e-mail" name="name">
+          <button type="button" class="btn" data-toggle="modal" data-target="#myModal">submit</button>
+          <button type="button" class="btn cancel" onclick="closeform()">Close</button>
+  
+        </form>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Thanks for subscribing!!!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+    <div class="d-one">
+        <nav id="myNav" class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-tabs ">
+                    <li class="nav-item">
+                        <a href="final-project.html" class="nav-link " id="navbardrop">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="the-longest-night.html" class="nav-link" id="navbardrop">The Longest Night</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="social-media.html" class="nav-link active" id="navbardrop">Social Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" id="navbardrop">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container d-two">
+            <h1>Ranata Suzuki</h1>
+            <p>A writer of words, a poetic soul, an emotive expressionist.</p>
+        </div>
+    </div>  
+    <div class="container d-three"><h1>THE LATEST POSTS ON SOCIAL MEDIA</h1></div>
+    <div class="container d-four">
+        <div class="row">
+            <div class="col-sm-6 column1">
+                <a class="twitter-timeline" href="https://twitter.com/RanataSuzuki?ref_src=twsrc%5Etfw">Tweets by RanataSuzuki</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            </div>
+            <div class="col-sm-6 column2">
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FRanataSuzukiQuotes%2Fvideos%2F453259125543739%2F&show_text=1&width=560" width="560" height="525" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>            </div>
+        </div>
+    </div>
+    <hr class="hr-line2"> 
+        <footer class="end">
+            <h6>&copy;2014-2020 Ranata Suzuki.</h6>
+            <p>All images and written words are Copyright of Ranata Suzuki unless otherwise stated. Sharing & reusing of material is permitted as long as it is clearly stated as being written by Ranata Suzuki.</p>
+            <p>&ast;Any names appearing in any Ranata Suzuki material have been changed. Similarities to any person(s) is purely coincidental. </p>
+            <p>COVER IMAGE CREDIT: giphy.com</p>
+        </footer>
+
+        <script>
+            var preloader=$("#loading");
+                function loader(){
+                   $(preloader).css("display","none");
+                }
+
+                function openform(){
+                 $("#myform").css("display","block");
+                }  
+                function closeform(){
+                    $("#myform").css("display","none");
+                }  
+
+                $(function(){
+            $("#myNav,.d-two ,.column1,.column2,.column3,.column4").css("display","none");
+            $("#myNav,.d-two").delay(5000).fadeIn(2000);
+            $(".column1,.column2").delay(7000).slideDown(1000);
+            var div = $(".open-button");
+            startAnimation();
+            function startAnimation(){
+                 div.delay(1000).animate({
+                     bottom:"40px",
+                    },{
+                        duration:400
+                    });
+                    div.animate({
+                     bottom:"23px",
+                    },{
+                        duration:400
+                    });
+                    startAnimation();
+            }
+
+        });
+               
+         </script>
+</body>
+</html>        

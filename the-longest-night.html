@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Longest Night</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="the-longest-night.css">
+</head>
+<body onload="loader()">
+    <div id="loading"></div>
+
+    <button type="button" class="btn open-button" onclick="openform()">
+      <img src="https://img.icons8.com/color/48/000000/open-in-popup.png"/>
+    </button> 
+    <div class="chat-popup" id="myform">
+        <form action="" class="form-container">
+          <label for="msg"><b>Subscribe here for upcoming book events!</b></label>
+          <input type="text" class="form-control" placeholder="Enter your e-mail" name="name">
+          <button type="button" class="btn" data-toggle="modal" data-target="#myModal">submit</button>
+          <button type="button" class="btn cancel" onclick="closeform()">Close</button>
+  
+        </form>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Thanks for subscribing!!!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+    <div class="d-one">
+        <nav id="myNav" class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-tabs ">
+                    <li class="nav-item">
+                        <a href="final-project.html" class="nav-link " id="navbardrop">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="the-longest-night.html" class="nav-link active" id="navbardrop">The Longest Night</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="social-media.html" class="nav-link" id="navbardrop">Social Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" id="navbardrop">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container d-two">
+            <h1>Ranata Suzuki</h1>
+            <p>A writer of words, a poetic soul, an emotive expressionist.</p>
+        </div>
+    </div>    
+    <div class="container d-three">
+        <img src="http://www.ranatasuzuki.com/files/resized/450415/1170;249;0d255e1510c3d3f0d813c59ac278a4db4ae6e8c1.jpg" class="img-fluid">
+    </div>
+    <div class="container d-four">
+        <h2>Limited Edition Author Signed Hardcover Copies</h2>
+        <hr class="hr-line1">
+            <p>The Longest Night is also available in limited edition hardcover direct from the author.</p>
+            <p>Each copy is signed to the name of your choice and also features:</p>
+            <p>&ast; Optional dedication comments </p>
+            <p> &ast; A Longest Night bookmark</p>
+            <p>&ast; A book illustration gift card which can be either filled in from the author to you, or can be left blank for you to fill in (should the book be a gift for someone special)</p>        
+    </div>
+    <div class="container d-five">
+        <div id="s-six" class="carousel slide d-six" data-ride="carousel">
+
+            <ul class="carousel-indicators">
+              <li data-target="#s-six" data-slide-to="0"></li>
+              <li data-target="#s-six" data-slide-to="1" class="active"></li>
+              <li data-target="#s-six" data-slide-to="2"></li>
+              <li data-target="#s-six" data-slide-to="3"></li>
+              <li data-target="#s-six" data-slide-to="4"></li>
+            </ul>
+
+            <div class="carousel-inner">
+              <div class="carousel-item ">
+                <img class="img-c" src="http://www.ranatasuzuki.com/files/resized/441614/cropped/550;309;119d1f6c91c632bc1752d53da577edeaea410ccf.jpg" >
+              </div>
+              <div class="carousel-item active">
+                <img class="img-c" src="http://www.ranatasuzuki.com/files/resized/441615/cropped/550;309;1a4750de69be6cad1ec59157f0980ae6e205db91.jpg" >
+              </div>
+              <div class="carousel-item">
+                <img class="img-c" src="http://www.ranatasuzuki.com/files/resized/441616/cropped/550;309;b31ddd56e6ec93b3277b5440924325627e4a79a1.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="img-c" src="http://www.ranatasuzuki.com/files/resized/441617/cropped/550;309;70302ab661cee23fb3904ab43799a8980c27808f.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="img-c" src="http://www.ranatasuzuki.com/files/resized/441618/cropped/550;309;a6982364b5ac6d3c894578907e8980ec920a2eba.jpg">
+              </div>
+            </div>
+          
+            <a class="carousel-control-prev" href="#s-six" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#s-six" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <hr class="hr-line2"> 
+        <footer class="end">
+            <h6>&copy;2014-2020 Ranata Suzuki.</h6>
+            <p>All images and written words are Copyright of Ranata Suzuki unless otherwise stated. Sharing & reusing of material is permitted as long as it is clearly stated as being written by Ranata Suzuki.</p>
+            <p>&ast;Any names appearing in any Ranata Suzuki material have been changed. Similarities to any person(s) is purely coincidental. </p>
+            <p>COVER IMAGE CREDIT: giphy.com</p>
+        </footer>
+
+        <script>
+            var preloader=$("#loading");
+                function loader(){
+                   $(preloader).css("display","none");
+                }
+
+                function openform(){
+                 $("#myform").css("display","block");
+                }  
+                function closeform(){
+                    $("#myform").css("display","none");
+                }  
+
+                $(function(){
+            $("#myNav,.d-two,.d-three,.d-four,.d-five").css("display","none");
+            $("#myNav,.d-two").delay(2000).fadeIn(2000);
+            $(".d-three").delay(3000).fadeIn(2000);
+            $(".d-four").delay(5000).slideDown(1000);
+            $(".d-five").delay(7000).fadeIn(1000);
+            var div = $(".open-button");
+            startAnimation();
+            function startAnimation(){
+                 div.delay(1000).animate({
+                     bottom:"40px",
+                    },{
+                        duration:400
+                    });
+                    div.animate({
+                     bottom:"23px",
+                    },{
+                        duration:400
+                    });
+                    startAnimation();
+            }
+
+        });
+               
+         </script>
+</body>
+</html>        
